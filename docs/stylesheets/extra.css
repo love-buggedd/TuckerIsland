@@ -1,0 +1,29 @@
+:root {
+  --font-normal: "Funnel Display";
+  --font-dyslexia: "Lexend";
+}
+
+html[data-font-mode="dyslexia"] {
+  --md-text-font: var(--font-dyslexia);
+}
+
+html[data-font-mode="dyslexia"] h1,
+html[data-font-mode="dyslexia"] h2,
+html[data-font-mode="dyslexia"] h3,
+html[data-font-mode="dyslexia"] h4,
+html[data-font-mode="dyslexia"] h5,
+html[data-font-mode="dyslexia"] h6 {
+  --md-text-font: var(--font-normal);
+}
+
+.md-header__button.font-toggle-btn {
+  cursor: pointer;
+}
+
+.font-toggle-btn[aria-pressed="true"] {
+  opacity: 1;
+}
+
+.font-toggle-btn svg {
+  display: block;
+}

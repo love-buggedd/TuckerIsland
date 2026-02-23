@@ -1,0 +1,38 @@
+[project]
+
+site_name = "Tucker Island"
+site_description = "Documentation for all of Tucker Island's Discord Features"
+site_author = "mat @xyb"
+#site_url = "https://www.example.com/"
+
+repo_name = "lovebuggedd/TuckerIsland"
+repo_url = "https://github.com/love-buggedd/TuckerIsland"
+repo = "fontawesome/brands/github"
+
+copyright = "Copyright &copy; 2026 @xyb"
+
+extra_css = ["stylesheets/extra.css"]
+extra_javascript = ["javascripts/font-toggle.js"]
+
+[project.theme]
+# variant = "classic"
+
+font.text = "Funnel Display"
+language = "en"
+
+features = [
+    "search.highlight"
+]
+
+[[project.theme.palette]]
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+[project.extra]
+generator = false
