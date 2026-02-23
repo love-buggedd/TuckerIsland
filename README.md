@@ -1,1 +1,1 @@
-# Tucker Island: Court
+https://discord.gg/UPQwaM3HsJ
