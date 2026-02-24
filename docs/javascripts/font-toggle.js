@@ -15,15 +15,11 @@
 
   const ICON_ACCESSIBILITY = `
     <svg xmlns="http://www.w3.org/2000/svg"
-         width="24" height="24" viewBox="0 0 24 24"
-         fill="none" stroke="currentColor" stroke-width="2"
-         stroke-linecap="round" stroke-linejoin="round"
-         aria-hidden="true" focusable="false">
-      <circle cx="16" cy="4" r="1"></circle>
-      <path d="m18 19 1-7-6 1"></path>
-      <path d="m5 8 3-3 5.5 3-2.36 3.5"></path>
-      <path d="M4.24 14.5a5 5 0 0 0 6.88 6"></path>
-      <path d="M13.76 17.5a5 5 0 0 0-6.88-6"></path>
+        width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round"
+      class="lucide lucide-type-outline-icon lucide-type-outline">
+      <path d="M14 16.5a.5.5 0 0 0 .5.5h.5a2 2 0 0 1 0 4H9a2 2 0 0 1 0-4h.5a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V8a2 2 0 0 1-4 0V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-4 0v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5Z"/>
     </svg>
   `;
 
@@ -45,6 +41,7 @@
   function setMode(mode) {
     const normalized = mode === "dyslexia" ? "dyslexia" : "normal";
     const enabled = normalized === "dyslexia";
+    const label = enabled ? "Switch to normal font" : "Switch to accessibility-friendly font";
 
     document.documentElement.setAttribute("data-font-mode", normalized);
     saveMode(normalized);
@@ -54,9 +51,9 @@
       btn.setAttribute("aria-pressed", String(enabled));
       btn.setAttribute(
         "aria-label",
-        enabled ? "Switch to normal font" : "Switch to dyslexia-friendly font"
+        label
       );
-      btn.title = enabled ? "Switch to normal font" : "Switch to dyslexia-friendly font";
+      btn.title = label;
       btn.innerHTML = enabled ? ICON_ACCESSIBILITY : ICON_FONT;
     }
   }
