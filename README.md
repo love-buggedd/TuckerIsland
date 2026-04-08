@@ -1,1 +1,5 @@
-https://discord.gg/UPQwaM3HsJ
+[![GitHub Repo](https://img.shields.io/badge/love.buggedd-TuckerIsles-red?style=for-the-badge&logo=github)](https://github.com/love-buggedd/TuckerIsles)
+[![GitHub Page](https://img.shields.io/badge/TuckerIsles-Docs-red?style=for-the-badge&logo=googledocs&logoColor=white&color=526CFE)](https://love-buggedd.github.io/TuckerIsles/)
+[![GitHub Stars](https://img.shields.io/github/stars/love-buggedd/TuckerIsles?style=for-the-badge&logo=github&color=yellow)](https://github.com/love-buggedd/TuckerIsles/stargazers)
+[![Discord](https://img.shields.io/discord/1414981774425194599?style=for-the-badge&logo=discord&logoColor=white&color=5865F2)](https://discord.gg/UPQwaM3HsJ)
+[![Last Commit](https://img.shields.io/github/last-commit/love-buggedd/TuckerIsles?style=for-the-badge&color=green)](https://github.com/love-buggedd/TuckerIsles/commits)
